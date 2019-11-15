@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="asset/css/Numeron.css">
+    </head>
+    <body>
+
+        <div class="container" id="player1">
+            <!--Place Player1 cards-->
+            <ul class="row justify-content-center text-center">
+                <li class="col p1Cards">
+                    <img src="asset/css/cards/Card_Backside_Blue01.png" alt="">
+                </li>
+                <li class="col p1Cards">
+                    <img src="asset/css/cards/Card_Backside_Blue01.png" alt="">
+                </li>
+                <li class="col p1Cards">
+                    <img src="asset/css/cards/Card_Backside_Blue01.png" alt="">
+                </li>
+            </ul>
+        </div>
+
+        <div class="d-flex container justify-content-center" id="tables">
+            <div id="scrollable1">
+                <table class="justify-content-center" id="table1">
+                    <thead>
+                        <tr>
+                            <th>P1 Trial</th>
+                            <th>Guessed</th>
+                            <th>Eat-Bite</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableRow1">
+                        
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="scrollable2">
+                <table class="justify-content-center" id="table2">
+                    <thead>
+                        <tr>
+                            <th>P2 Trial</th>
+                            <th>Guessed</th>
+                            <th>Eat-Bite</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableRow2">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <input class="textview" type="number">
+        </div>
+
+        <div class="d-flex container justify-content-center" id="numpad">
+            <div class="btn-group-vertical">
+                <div class="btn-group btn-group-lg" role="group">
+                    <button type="button" class="btn btn-outline-primary" id="7">7</button>
+                    <button type="button" class="btn btn-outline-primary" id="8">8</button>
+                    <button type="button" class="btn btn-outline-primary" id="9">9</button>
+                </div>
+                <div class="btn-group btn-group-lg" role="group">
+                    <button type="button" class="btn btn-outline-primary" id="4">4</button>
+                    <button type="button" class="btn btn-outline-primary" id="5">5</button>
+                    <button type="button" class="btn btn-outline-primary" id="6">6</button>
+                </div>
+                <div class="btn-group btn-group-lg" role="group">
+                    <button type="button" class="btn btn-outline-primary" id="1">1</button>
+                    <button type="button" class="btn btn-outline-primary" id="2">2</button>
+                    <button type="button" class="btn btn-outline-primary" id="3">3</button>
+                </div>
+                <div class="btn-group btn-group-lg" role="group">
+                    <button type="button" class="btn btn-outline-danger" id="clear">
+                        <i class="fas fa-eraser"></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-primary" id="0">0</button>
+                    <button type="button" class="btn btn-outline-success" id="call">
+                        <i class="fas fa-bullseye"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="player2">
+            <!--Place Player2 cards-->
+            <ul class="row justify-content-center text-center">
+                <li class="col p2Cards">
+                    <img src="asset/css/cards/Card_Backside_Red01.png" alt="">
+                </li>
+                <li class="col p2Cards">
+                    <img src="asset/css/cards/Card_Backside_Red01.png" alt="">
+                </li>
+                <li class="col p2Cards">
+                    <img src="asset/css/cards/Card_Backside_Red01.png" alt="">
+                </li>
+            </ul>
+        </div>
+
+        <script 
+            src="https://kit.fontawesome.com/56cec86fb6.js" 
+            crossorigin="anonymous">
+        </script>
+        <script src="asset/js/Card.js" async defer></script>
+        <script src="asset/js/Player.js" async defer></script>
+        <script src="asset/js/Numeron.js" async defer></script>
+        
+    </body>
+</html>
